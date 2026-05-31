@@ -98,7 +98,7 @@ def generateHTML():
 		so_json = json.load(j)
 
 	for key in so_json:
-		if (so_json[key][0] == ""):
+		if so_json[key] and so_json[key][0] == "":
 			continue
 		html_content += '''			<div class="set-group">''' + key + '''</div>
 		'''
