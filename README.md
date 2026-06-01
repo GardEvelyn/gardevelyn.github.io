@@ -20,7 +20,17 @@ Go to the "Settings" tab of your repo and then select "Pages" from the left menu
 
 <img width="266" height="115" alt="image" src="https://github.com/user-attachments/assets/91008dad-6060-4bec-b019-f4b7222636f4" />
 
-In addition: if you have chosen a different name for your repo than `username.github.io` it will show you the current location the site is deployed to, click "Visit site" to go to then new site. Save this url as well.
+Next ensure the workflow is enabled, go to the top of the page again and click "Actions", [here](../../actions). If you are asked to enable them, click yes. Note that actions will run scripts on your behalf on github (not on your machine), the workflow is already set up to work without modifications.
+
+<img width="1610" height="779" alt="image" src="https://github.com/user-attachments/assets/7090dbeb-ecc0-4c9c-aca7-168fc8ae9a6f" />
+
+Ensure the pages.yml action is enabled, click the first action in the list on the left, [here](../../actions/workflows/pages.yml). If the workflow says it is disabled at the top, click the button that says "Enable workflow".
+
+Make sure the workflow has ran once, if it says "This workflow has no runs yet", click the dropdown "Run workflow" right above it, then the "Run workflow" button. If there already is an entry, select the top entry from the list.
+
+Wait for the workflow to complete, this takes about 30 seconds. It will give you the url of the generated github.io site. Eg. `https://octocat.github.io`. Save this url.
+
+Alternatively, go back to the pages menu in the settings, [here](../../settings/pages). Then click "Visit site" to go to the site. Save this url.
 
 ## Step 3: Installing the exporter
 
